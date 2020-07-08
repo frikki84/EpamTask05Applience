@@ -25,7 +25,7 @@ public class Controller {
 
 		String productFeature = "OS".toLowerCase();
 
-		String featureValue = "Windows".toLowerCase();
+		String featureValue = "WINDOWS".toLowerCase();
 
 		List<Applience> applienceList = findRequiredAppliences(usersProduct, productFeature, featureValue,
 				stringListFromFile);
