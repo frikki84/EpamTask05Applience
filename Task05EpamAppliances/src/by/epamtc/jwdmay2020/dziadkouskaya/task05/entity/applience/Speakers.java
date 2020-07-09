@@ -1,4 +1,4 @@
-package by.epamtc.jwdmay2020.dziadkouskaya.task05.entity;
+package by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience;
 
 public class Speakers extends Applience {
 	public static final String SPEAKERS_NAME = "speakers";

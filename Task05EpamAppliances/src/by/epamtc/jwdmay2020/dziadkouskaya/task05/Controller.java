@@ -6,13 +6,14 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
-import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.Applience;
-import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.Laptop;
-import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.Oven;
-import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.Refrigerator;
-import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.Speakers;
-import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.TabletPC;
-import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.VacuumCleaner;
+import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience.Applience;
+import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience.Laptop;
+import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience.Oven;
+import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience.Refrigerator;
+import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience.Speakers;
+import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience.TabletPC;
+import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience.VacuumCleaner;
+import by.epamtc.jwdmay2020.dziadkouskaya.task05.logic.StringCorrection;
 
 public class Controller {
 	public static void main(String[] args) {
@@ -25,7 +26,9 @@ public class Controller {
 
 		String productFeature = "OS".toLowerCase();
 
-		String featureValue = "WINDOWS".toLowerCase();
+		String featureValue = "Linux__".toLowerCase();
+		
+		System.out.println(StringCorrection.modifyStringToCommonView(featureValue));
 
 		List<Applience> applienceList = findRequiredAppliences(usersProduct, productFeature, featureValue,
 				stringListFromFile);

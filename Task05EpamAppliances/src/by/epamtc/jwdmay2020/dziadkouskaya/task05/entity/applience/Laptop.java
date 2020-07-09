@@ -1,4 +1,4 @@
-package by.epamtc.jwdmay2020.dziadkouskaya.task05.entity;
+package by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience;
 
 public class Laptop extends Applience {
 	public static final String LAPTOP_NAME = "laptop";

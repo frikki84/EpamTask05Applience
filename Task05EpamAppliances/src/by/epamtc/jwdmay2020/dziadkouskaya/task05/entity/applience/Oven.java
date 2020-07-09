@@ -1,4 +1,4 @@
-package by.epamtc.jwdmay2020.dziadkouskaya.task05.entity;
+package by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience;
 
 import java.io.IOException;
 
@@ -16,23 +16,23 @@ public class Oven extends Applience {
 	private double height;
 
 	private double width;
-	
+
 	{
 		setApplienceName(OVEN_NAME);
 	}
 
 	public Oven() {
-		
+
 	}
-	
+
 	public Oven(int powerConsumptation) {
-		
+
 		this.power_consumptation = powerConsumptation;
-		
+
 	}
 
 	public Oven(int powerConsumptation, int weight, int capacity, double depth, double height, double width) {
-		
+
 		this.power_consumptation = powerConsumptation;
 		this.weight = weight;
 		this.capacity = capacity;
@@ -96,7 +96,7 @@ public class Oven extends Applience {
 	}
 
 	@Override
-	public Applience createNewObject(String [] stringArray) {
+	public Applience createNewObject(String[] stringArray) {
 		int power_consumptation = Integer.parseInt(stringArray[2]);
 
 		int weight = Integer.parseInt(stringArray[4]);
@@ -107,18 +107,9 @@ public class Oven extends Applience {
 
 		double height = Double.parseDouble(stringArray[10]);
 
-		double width =Double.parseDouble(stringArray[12]);
-		
-		
-		
+		double width = Double.parseDouble(stringArray[12]);
+
 		return new Oven(power_consumptation, weight, capacity, depth, height, width);
 	}
-
-
-
-	
-	
-	
-	
 
 }
