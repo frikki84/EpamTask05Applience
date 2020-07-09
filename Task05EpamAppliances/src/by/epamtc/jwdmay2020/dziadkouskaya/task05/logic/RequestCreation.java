@@ -5,10 +5,12 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.request.UserRequest;
+import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.request.UserRequest;abstract
 
+//модификация запроса из стоки (массива строк) в объект класса UserRequest
 public class RequestCreation {
 	
+
 	public static UserRequest createRequesFromList(List<String> requestList) {
 		requestList = prepareStringList(requestList);
 		

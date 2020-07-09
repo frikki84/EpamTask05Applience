@@ -2,6 +2,8 @@ package by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.request;
 
 import java.util.HashMap;
 
+
+//сущность для описания запроса пользователя: название товара и все характеристики
 public class UserRequest {
 	
 	private String usersProduct;

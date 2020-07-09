@@ -3,6 +3,7 @@ package by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.catalog;
 import java.util.ArrayList;
 import java.util.List;
 
+//сущность для хранения позиций, которые соответствуют параметрам поиска
 public class Catallogue {
 	
 	private List<String[]> catalog;

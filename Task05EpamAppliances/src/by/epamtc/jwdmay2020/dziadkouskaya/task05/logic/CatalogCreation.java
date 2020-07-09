@@ -11,7 +11,9 @@ import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.request.UserRequest;
 import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.source.InfoSourse;
 
 public class CatalogCreation {
+	
 	public static Catallogue createCatalog(InfoSourse sourse, UserRequest request) {
+		
 		List<String[]> listOfRequiredProduct = findArraysWithRequiredProduct(sourse, request);
 
 		List<String[]> resultList = findVariantSuitableForAllFeatures(request.getFeaturesAndValuesHashMap(),
@@ -22,26 +24,22 @@ public class CatalogCreation {
 		return catallogue;
 	}
 
-	public static ArrayList<String[]> findArraysWithRequiredProduct(InfoSourse sourse, UserRequest request) {
-		ArrayList<String[]> resultList = new ArrayList();
+	//создание  ArrayList<String[]>, содержащий все товары, соответсвующие любому из запросов
+	public static List<String[]> findArraysWithRequiredProduct(InfoSourse sourse, UserRequest request) {
+		List<String[]> resultList = new ArrayList();
 
 		for (String string : sourse.getInfoContaiter()) {
 
 			String[] stringWords = ArrayCreation.splitStringToArray(string);
 
-			// System.out.println(Arrays.toString(stringWords));
-
+			
 			if (stringWords[0].equals(request.getUsersProduct())) {
-				// System.out.println(stringWords[0] + " --- " + request.getUsersProduct());
-
+				
 				for (Entry<String, String> entry : request.getFeaturesAndValuesHashMap().entrySet()) {
 
 					for (int i = 1; i < stringWords.length; i++) {
 
 						if (stringWords[i].equals(entry.getKey())) {
-
-							// System.out.println(stringWords[i] + "---" + entry.getKey() + " " +
-							// entry.getValue());
 
 							if (stringWords[i + 1].equals(entry.getValue())) {
 
@@ -54,17 +52,16 @@ public class CatalogCreation {
 			}
 
 		}
-		/*
-		 * for (String[] i : resultList) { System.out.println(Arrays.toString(i));
-		 * 
-		 * }
-		 */
+
 
 		return resultList;
 	}
 
+	
+	//создание  List<String[]>, содержащий товары, соответсвующие всем параметрам одновременно
 	public static List<String[]> findVariantSuitableForAllFeatures(HashMap<String, String> featuresHashMap,
 			List<String[]> list) {
+		
 		List<String[]> resultList = new ArrayList<>();
 
 		int expectedCounterValue = featuresHashMap.size();

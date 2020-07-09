@@ -6,6 +6,7 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+//источник информации - текстовый файл
 public class TextFileInfoSource extends InfoSourse {
 
 	private String fileName;

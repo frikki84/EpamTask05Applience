@@ -3,6 +3,8 @@ package by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.source;
 import java.util.ArrayList;
 import java.util.List;
 
+
+//абстрактная сущность для источника информации для анализа
 public abstract class InfoSourse {
 	
 	private List<String> infoContaiter;
