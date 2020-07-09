@@ -3,13 +3,13 @@ package by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience;
 public class TabletPC extends Applience {
 	public static final String TABLET_PC_NAME = "tabletpc";
 
-	private double battery_capacity;
+	private double batteryCapacity;
 
 	private int displayInch;
 
-	private int memory_rom;
+	private int memoryRom;
 
-	private int flash_memory_capacity;
+	private int flashMemoryCapacity;
 
 	private String color;
 
@@ -22,21 +22,21 @@ public class TabletPC extends Applience {
 		// TODO Auto-generated constructor stub
 	}
 
-	public TabletPC(double battery_capacity, int displayInch, int memory_rom, int flash_memory_capacity, String color) {
+	public TabletPC(double batteryCapacity, int displayInch, int memoryRom, int flashMemoryCapacity, String color) {
 		super();
-		this.battery_capacity = battery_capacity;
+		this.batteryCapacity = batteryCapacity;
 		this.displayInch = displayInch;
-		this.memory_rom = memory_rom;
-		this.flash_memory_capacity = flash_memory_capacity;
+		this.memoryRom = memoryRom;
+		this.flashMemoryCapacity = flashMemoryCapacity;
 		this.color = color;
 	}
 
-	public double getBattery_capacity() {
-		return battery_capacity;
+	public double getBatteryCapacity() {
+		return batteryCapacity;
 	}
 
-	public void setBattery_capacity(double battery_capacity) {
-		this.battery_capacity = battery_capacity;
+	public void setBatteryCapacity(double batteryCapacity) {
+		this.batteryCapacity = batteryCapacity;
 	}
 
 	public int getDisplayInch() {
@@ -47,20 +47,20 @@ public class TabletPC extends Applience {
 		this.displayInch = displayInch;
 	}
 
-	public int getMemory_rom() {
-		return memory_rom;
+	public int getMemoryRom() {
+		return memoryRom;
 	}
 
-	public void setMemory_rom(int memory_rom) {
-		this.memory_rom = memory_rom;
+	public void setMemoryRom(int memoryRom) {
+		this.memoryRom = memoryRom;
 	}
 
-	public int getFlash_memory_capacity() {
-		return flash_memory_capacity;
+	public int getFlashMemoryCapacity() {
+		return flashMemoryCapacity;
 	}
 
-	public void setFlash_memory_capacity(int flash_memory_capacity) {
-		this.flash_memory_capacity = flash_memory_capacity;
+	public void setFlashMemoryCapacity(int flashMemoryCapacity) {
+		this.flashMemoryCapacity = flashMemoryCapacity;
 	}
 
 	public String getColor() {
@@ -73,8 +73,8 @@ public class TabletPC extends Applience {
 
 	@Override
 	public String toString() {
-		return "TabletPC [battery_capacity=" + battery_capacity + ", displayInch=" + displayInch + ", memory_rom="
-				+ memory_rom + ", flash_memory_capacity=" + flash_memory_capacity + ", color=" + color + "]";
+		return "TabletPC [batteryCapacity=" + batteryCapacity + ", displayInch=" + displayInch + ", memoryRom="
+				+ memoryRom + ", flashMemoryCapacity=" + flashMemoryCapacity + ", color=" + color + "]";
 	}
 
 	@Override

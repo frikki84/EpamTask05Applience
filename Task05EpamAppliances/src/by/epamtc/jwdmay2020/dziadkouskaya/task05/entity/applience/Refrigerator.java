@@ -4,13 +4,13 @@ public class Refrigerator extends Applience {
 
 	public static final String REFRIGERATOR_NAME = "refrigerator";
 
-	private int power_consumption;
+	private int powerConsumption;
 
 	private int weight;
 
-	private int freezer_capacity;
+	private int freezerCapacity;
 
-	private int overal_capacity;
+	private int overalCapacity;
 
 	private int height;
 
@@ -25,23 +25,23 @@ public class Refrigerator extends Applience {
 
 	}
 
-	public Refrigerator(int power_consumption, int weight, int freezer_capacity, int overal_capacity, int height,
+	public Refrigerator(int powerConsumption, int weight, int freezerCapacity, int overalCapacity, int height,
 			int width) {
 		super();
-		this.power_consumption = power_consumption;
+		this.powerConsumption = powerConsumption;
 		this.weight = weight;
-		this.freezer_capacity = freezer_capacity;
-		this.overal_capacity = overal_capacity;
+		this.freezerCapacity = freezerCapacity;
+		this.overalCapacity = overalCapacity;
 		this.height = height;
 		this.width = width;
 	}
 
-	public int getPower_consumption() {
-		return power_consumption;
+	public int getPowerConsumption() {
+		return powerConsumption;
 	}
 
-	public void setPower_consumption(int power_consumption) {
-		this.power_consumption = power_consumption;
+	public void setPowerConsumption(int powerConsumption) {
+		this.powerConsumption = powerConsumption;
 	}
 
 	public int getWeight() {
@@ -52,20 +52,20 @@ public class Refrigerator extends Applience {
 		this.weight = weight;
 	}
 
-	public int getFreezer_capacity() {
-		return freezer_capacity;
+	public int getFreezerCapacity() {
+		return freezerCapacity;
 	}
 
-	public void setFreezer_capacity(int freezer_capacity) {
-		this.freezer_capacity = freezer_capacity;
+	public void setFreezer_capacity(int freezerCapacity) {
+		this.freezerCapacity = freezerCapacity;
 	}
 
-	public int getOveral_capacity() {
-		return overal_capacity;
+	public int getOveralCapacity() {
+		return overalCapacity;
 	}
 
-	public void setOveral_capacity(int overal_capacity) {
-		this.overal_capacity = overal_capacity;
+	public void setOveralCapacity(int overalCapacity) {
+		this.overalCapacity = overalCapacity;
 	}
 
 	public int getHeight() {
@@ -86,8 +86,8 @@ public class Refrigerator extends Applience {
 
 	@Override
 	public String toString() {
-		return "Refrigerator [power_consumption=" + power_consumption + ", weight=" + weight + ", freezer_capacity="
-				+ freezer_capacity + ", overal_capacity=" + overal_capacity + ", height=" + height + ", width=" + width
+		return "Refrigerator [power_consumption=" + powerConsumption + ", weight=" + weight + ", freezer_capacity="
+				+ freezerCapacity + ", overal_capacity=" + overalCapacity + ", height=" + height + ", width=" + width
 				+ "]";
 	}
 

@@ -5,7 +5,7 @@ import java.io.IOException;
 public class Oven extends Applience {
 	public static final String OVEN_NAME = "oven";
 
-	private int power_consumptation;
+	private int powerConsumptation;
 
 	private int weight;
 
@@ -27,13 +27,13 @@ public class Oven extends Applience {
 
 	public Oven(int powerConsumptation) {
 
-		this.power_consumptation = powerConsumptation;
+		this.powerConsumptation = powerConsumptation;
 
 	}
 
 	public Oven(int powerConsumptation, int weight, int capacity, double depth, double height, double width) {
 
-		this.power_consumptation = powerConsumptation;
+		this.powerConsumptation = powerConsumptation;
 		this.weight = weight;
 		this.capacity = capacity;
 		this.depth = depth;
@@ -42,11 +42,11 @@ public class Oven extends Applience {
 	}
 
 	public int getPowerConsumptation() {
-		return power_consumptation;
+		return powerConsumptation;
 	}
 
 	public void setPowerConsumptation(int powerConsumptation) {
-		this.power_consumptation = powerConsumptation;
+		this.powerConsumptation = powerConsumptation;
 	}
 
 	public int getWeight() {
@@ -91,13 +91,13 @@ public class Oven extends Applience {
 
 	@Override
 	public String toString() {
-		return "Oven [powerConsumptation=" + power_consumptation + ", weight=" + weight + ", capacity=" + capacity
+		return "Oven [powerConsumptation=" + powerConsumptation + ", weight=" + weight + ", capacity=" + capacity
 				+ ", depth=" + depth + ", height=" + height + ", width=" + width + "]";
 	}
 
 	@Override
 	public Applience createNewObject(String[] stringArray) {
-		int power_consumptation = Integer.parseInt(stringArray[2]);
+		int powerConsumptation = Integer.parseInt(stringArray[2]);
 
 		int weight = Integer.parseInt(stringArray[4]);
 
@@ -109,7 +109,7 @@ public class Oven extends Applience {
 
 		double width = Double.parseDouble(stringArray[12]);
 
-		return new Oven(power_consumptation, weight, capacity, depth, height, width);
+		return new Oven(powerConsumptation, weight, capacity, depth, height, width);
 	}
 
 }

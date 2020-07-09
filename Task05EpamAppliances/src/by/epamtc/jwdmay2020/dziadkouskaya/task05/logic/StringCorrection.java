@@ -5,9 +5,20 @@ public class StringCorrection {
 	
 	public static String modifyStringToCommonView (String string) {
 		
+		String regExForSplit = "[_]";
+		
+		string = string.replaceAll(regExForSplit, "").toLowerCase();
+		
+	
+		return string;
+	}
+	
+public static String modifyStringToCommonViewWithoutSpaces (String string) {
+		
 		String regExForSplit = "[:=\\,; _]";
 		
-		string = string.replaceAll(regExForSplit, " ").toLowerCase();
+		string = string.replaceAll(regExForSplit, "").toLowerCase();
+		
 	
 		return string;
 	}

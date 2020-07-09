@@ -1,26 +1,27 @@
 package by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.catalog;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Catallogue {
 	
-	private ArrayList<String[]> catalog;
+	private List<String[]> catalog;
 
 	public Catallogue() {
 		super();
 		catalog = new ArrayList<>();
 	}
 
-	public Catallogue(ArrayList<String[]> catalog) {
+	public Catallogue(List<String[]> catalog) {
 		super();
 		this.catalog = catalog;
 	}
 
-	public ArrayList<String[]> getCatalog() {
+	public List<String[]> getCatalog() {
 		return catalog;
 	}
 
-	public void setCatalog(ArrayList<String[]> catalog) {
+	public void setCatalog(List<String[]> catalog) {
 		this.catalog = catalog;
 	}
 
