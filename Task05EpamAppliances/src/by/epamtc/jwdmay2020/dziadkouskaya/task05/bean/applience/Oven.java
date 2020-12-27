@@ -1,4 +1,4 @@
-package by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience;
+package by.epamtc.jwdmay2020.dziadkouskaya.task05.bean.applience;
 
 import java.io.IOException;
 

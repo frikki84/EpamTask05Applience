@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience.Applience;
+import by.epamtc.jwdmay2020.dziadkouskaya.task05.bean.applience.Applience;
 import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.catalog.Catallogue;
 import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.request.UserRequest;
 import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.source.InfoSourse;
@@ -29,7 +29,9 @@ public class ApplienceController {
 		List<Applience> applienceList = ApplienceListCreation.createListOfRequiredApplience(catallogue);
 
 		if (applienceList.size() == 0) {
+			
 			System.out.println("No results!!!");
+			
 		} else {
 
 			for (Applience applience : applienceList) {

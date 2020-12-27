@@ -3,13 +3,13 @@ package by.epamtc.jwdmay2020.dziadkouskaya.task05.logic;
 import java.util.ArrayList;
 import java.util.List;
 
-import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience.Applience;
-import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience.Laptop;
-import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience.Oven;
-import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience.Refrigerator;
-import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience.Speakers;
-import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience.TabletPC;
-import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.applience.VacuumCleaner;
+import by.epamtc.jwdmay2020.dziadkouskaya.task05.bean.applience.Applience;
+import by.epamtc.jwdmay2020.dziadkouskaya.task05.bean.applience.Laptop;
+import by.epamtc.jwdmay2020.dziadkouskaya.task05.bean.applience.Oven;
+import by.epamtc.jwdmay2020.dziadkouskaya.task05.bean.applience.Refrigerator;
+import by.epamtc.jwdmay2020.dziadkouskaya.task05.bean.applience.Speakers;
+import by.epamtc.jwdmay2020.dziadkouskaya.task05.bean.applience.TabletPC;
+import by.epamtc.jwdmay2020.dziadkouskaya.task05.bean.applience.VacuumCleaner;
 import by.epamtc.jwdmay2020.dziadkouskaya.task05.entity.catalog.Catallogue;
 
 public class ApplienceListCreation {
